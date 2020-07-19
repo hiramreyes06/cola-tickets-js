@@ -1,0 +1,20 @@
+El uso de clases en javascript nos permite dividir el codigo en modulos, para
+que puedan ser exportados y usados a otras clases, con el fin de ser mas
+organizado y que tengamos ayuda del tipado.
+
+Para crear una clase se usa
+
+export class MiClase{
+
+} 
+
+Y para exportar una o mas clases, en la misma clase
+
+module.exports ={ MiClase };
+
+Y para hacer uso de la clase exportada
+
+const { MiClase } require=('./path/MiClase');
+
+Y se crearia una instancia 
+
